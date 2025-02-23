@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenHeart - Patient Status</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md h-[600px] bg-white rounded-3xl p-6">
+        <div class="flex items-center mb-6">
+            <a href="patients" class="text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <h1 class="ml-4 text-xl">Patient Status</h1>
+        </div>
+
+        <div class="space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="w-16 h-16 bg-gray-200 rounded-full"></div>
+                <div>
+                    <h2 class="text-lg font-medium">John Doe</h2>
+                    <p class="text-sm text-gray-500">Age: 35 years</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <a href="live_condition" class="block p-4 border rounded-lg hover:border-[#20D5D2]">
+                    <h3 class="font-medium mb-2">Live Condition</h3>
+                    <p class="text-sm text-gray-600">Status: Stable</p>
+                    <span class="text-[#20D5D2] text-sm mt-2 block">Learn More</span>
+                </a>
+
+                <a href="medical_record" class="block p-4 border rounded-lg hover:border-[#20D5D2]">
+                    <h3 class="font-medium mb-2">Status Reports</h3>
+                    <p class="text-sm text-gray-600">Latest Report: February 2024</p>
+                    <span class="text-[#20D5D2] text-sm mt-2 block">View All</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

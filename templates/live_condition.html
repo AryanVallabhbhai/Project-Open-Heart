@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenHeart - Live Condition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md h-[600px] bg-white rounded-3xl p-6">
+        <div class="flex items-center mb-6">
+            <a href="patient_status" class="text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <h1 class="ml-4 text-xl">Live Condition</h1>
+        </div>
+
+        <div class="space-y-6">
+            <div class="p-4 border rounded-lg">
+                <h3 class="font-medium mb-2">Analysis</h3>
+                <p class="text-sm text-gray-600 mb-4">
+                    Patient's current vital signs are within normal parameters, indicating stable condition.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium">Heart Rate</span>
+                            <span class="text-sm text-[#20D5D2]">75 bpm</span>
+                        </div>
+                        <div class="h-8 bg-gray-100 rounded"></div>
+                    </div>
+
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium">Blood Pressure</span>
+                            <span class="text-sm text-[#20D5D2]">120/80 mmHg</span>
+                        </div>
+                        <div class="h-8 bg-gray-100 rounded"></div>
+                    </div>
+
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium">Oxygen Saturation</span>
+                            <span class="text-sm text-[#20D5D2]">98%</span>
+                        </div>
+                        <div class="h-8 bg-gray-100 rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
